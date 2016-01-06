@@ -1,0 +1,41 @@
+body {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.highlights {
+  outline: 1px solid red;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+section {
+  min-height: 400px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: gray;
+  outline: 1px solid red;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+section header {
+  background-color: green;
+}
+/* NAMESPACING */
+.heading header {
+  background-color: pink;
+}
+.heading header:hover {
+  color: red;
+}
+div {
+  outline: 1px solid red;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 30%;
+  height: 50px;
+  display: inline-block;
+  background-color: #ffff00;
+}
+div:hover {
+  background-color: #c3c300;
+}

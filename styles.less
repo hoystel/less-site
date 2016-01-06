@@ -1,0 +1,52 @@
+@background-color: gray;
+@text-color: white;
+@font-main-size: 14px;
+@highlight: green;
+@specials: #FFFF00;
+
+
+body{
+	color: @text-color;
+	font-size: @font-main-size;
+	text-align:center;
+}
+
+.highlights{
+	outline:1px solid red;
+	margin-top:5px;
+	margin-bottom:5px;
+	}
+
+section{
+	min-height:400px;
+	width:80%;
+	margin:0 auto;
+	background-color: @background-color;
+	.highlights;
+	header{
+		background-color: @highlight;}
+	}
+	
+/* NAMESPACING */
+.heading{
+	header{
+		background-color:pink;
+		&:hover{
+			color:red;
+			}
+		}
+}
+
+div{
+	.highlights;
+	width:30%;
+	height:50px;
+	display:inline-block;
+	background-color: @specials;
+	&:hover{
+		background-color: @specials - 60;
+		}
+	}
+	
+
+	
